@@ -1,0 +1,91 @@
+/* navbar css */
+#navbar {
+	box-shadow: 0px 2px 10px #777;
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+/* Two options:  */
+/* #navbar > a {}  */
+#navbar a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+	/*background-color: #FC0;*/
+
+	/* 
+		width of #main = 600px
+		# of menu options = 4
+		width per menu option: 600px / 4 = 150px;
+	 */
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+    opacity: 1;
+	color:rgb(45, 181, 226);
+	border-bottom: 2px solid rgb(45, 181, 226);
+}
+
+#navbar a:hover, #navbar #active-nav {
+    color: #900;
+    border-bottom: 2px solid #900;
+}
+/* header */
+#header {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+}
+
+#headtext{
+    padding-top: 150px;
+    font-size: larger;
+    color:rgb(133, 255, 10);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+#footercont {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(90, 162, 185);
+    color: #FFF;
+    height: 150px;
+    display: flex;
+}
+
+#footleft{
+    margin-left: 200px;
+    margin-right: 800px;
+    font-size: 200%;
+}
+#footrt{
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+}
+#footrt img{
+    margin-right: 60px;
+}
+#footrt p{
+    position: absolute;
+    top: 50px;
+    text-decoration: none;
+    color: white;
+}
+#git{
+    height: 60px; 
+    margin-right: 30px;
+}
+#link{
+    height: 60px;
+}
+body{
+    margin: 0px;
+    background-image: url(img/bodybg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}

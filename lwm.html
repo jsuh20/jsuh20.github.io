@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn With Me</title>
+        <meta name="description" content="Since I was young, I was interested in somehow showing and telling my journey in 
+        learning and the progress I make. When doing this, I try my best to make it learnable 
+        and intriguing for others. In this page, I am trying to display my different endeavors related to what
+        interests me, particularly what is going on the market for recent technologies.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            #header{
+                background-image: url(img/bglwm.jpg); 
+            }
+            #mid{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(44, 67, 97);
+                margin-top: -60px;
+            }
+            #mid h2{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-top: 70px;
+                color:azure;
+                font-size: 50px;
+            }
+            #mid p{
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding-bottom: 70px;
+                color:chartreuse;
+                line-height: 30px;
+            }
+            #videos{
+                margin-left: auto;
+                height: 490px;
+                margin-top: 50px;
+            }
+            #videos iframe{
+                display: table;
+            }
+            #videos .vid{
+                margin-right: 100px;
+                display: inline-block;
+            }
+            #videos h2{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            #vidcont{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                height: auto;
+            }
+            .vidcap{
+                box-sizing: border-box;
+                width: 0px;
+                min-width: 100%;
+                line-height: 20px;
+            }
+            #prez{
+                background-color: rgb(38, 42, 54);
+                display: flex;
+            }
+            #prezcap{
+                margin-left: 40px;
+                margin-right:40px;
+                text-align: center;
+                margin-top: 150px;
+                color:rgb(106, 194, 18);
+            }
+            #prez iframe{
+                margin-left: 100px;
+                /* display: table; */
+                width: 600px;
+                height: 300px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <div id="navbar">
+            <a href="home.html">Home</a>
+            <a id="active-nav" href="">Learn With Me</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <!-- header: photo and title -->
+        <div id="header">
+            <div id="headtext">
+                <h1>Learn With Me</h1>
+            </div>
+        </div>
+        <!-- middle body -->
+        <div id="mid">
+            <h2>My Explorations</h2>
+            <p><b>Since I was young, I was interested in somehow showing and telling my journey in 
+                learning and the progress I make. When doing this, I try my best to make it learnable 
+                and intriguing for others.</b>
+            </p>
+        </div>
+        <!-- videos -->
+        <div id="videos">
+            <h2 style="font-size: 40px;">MY VIDEOS</h2>
+            <div id="vidcont">
+                <div class="vid" id="vid1">
+                    <iframe allow="fullscreen;" src="img/promo.mp4" sandbox></iframe>
+                    <div class="vidcap">
+                        <h3>Wavetalk Promo Video</h3>
+                        <p>This is a promotional video I made when I was interning at a biotech startup aiming 
+                            to create cutting-edge water filtration technology. Making this video 
+                            opened my eyes to the seriousness of the water crisis and the practical 
+                            ways of finding a solution through science</p>
+                    </div>
+                </div>
+                <div class="vid" id="vid2">
+                    <iframe allow="fullscreen;" src="img/vid2.mp4" sandbox></iframe>
+                    <div class="vidcap">
+                        <h3>Elon Musk's Plan</h3>
+                        <p>In an effort to explore Elon Musk, a founder of many companies, I made this video to 
+                        compile the different visions shared by many of his startups.</p>
+                    </div>
+                </div>
+                <div class="vid" id="vid3">
+                    <iframe allow="fullscreen;" src="img/elplan.mp4" sandbox></iframe>
+                    <div class="vidcap">
+                        <h3>The Boring Company Intro</h3>
+                        <p>Interested in automation and the automobile industry, I created a 
+                        video to introduce some background about Elon Musk's 
+                        transit startup, the Boring Company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infographic -->
+        <!-- presentations -->
+        <div id="prez">
+            <div id="prezbox">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjyzp2idVkHctSY-QIP_JRvHJ3fwgTjM7kmVYQZw3-lgE6xvFT71zVgo_UV9Pd0qf9FnXA0wJ3irZM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <div id="prezcap">
+                <p><b>With this slideshow, I aimed to convey an overview 
+                    of a research paper covering the different components of 
+                    path planning, such as the required inputs, different path 
+                    planning algorithms, and how developments are being made to harness a 
+                    robot's ability to recognize its environment</b></p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footercont">
+            <!-- have name, description, and socials -->
+            <div id="footleft">
+                <p>Phillip Suh</p>
+            </div>
+            <div id="footrt">
+                <a href="https://github.com/jsuh20" target="_blank">
+                    <img id="git" src="img/git.png" alt="git">
+                </a>
+                <a href="https://www.linkedin.com/in/huspillihp" target="_blank">
+                    <img id="link" src="img/link.png" alt="link">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phillip Suh: Home</title>
+        <meta name="description" content="This website serves to convey my personality and 
+        passion for technology by showcasing various works 
+        I have done, such as research, design, and projects. It 
+        is essentially a personal portfolio website that is effective in 
+        portraying an engineer’s personality and experience through his hands-on work. 
+        The emphasis that I want to put in this website is on my skill sets and 
+        my drive to learn and apply different programming languages/frameworks. 
+        In the website, I will try to also make it aesthetically pleasing as I believe 
+        a nice graphic user interface is a necessary component 
+        when a user or a potential employer looks at my portfolio.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            #header{
+                background-image: url(img/IMG_2968.jpeg); 
+            }
+            /* #headtext{
+                padding-top: 150px;
+                font-size: larger;
+                color:rgb(133, 255, 10);
+                font-family: Arial, Helvetica, sans-serif;
+            } */
+            #aboutcontainer{
+                width: 100%;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            #aboutme{
+                width: 450px;
+                margin-left: 200px;
+                margin-right: 160px;
+                line-height: 30px;
+                background-color: rgb(0, 255, 255, 0.2);
+                padding: 20px;
+            }
+            #skills{
+                width: 450px;
+            }
+            #skillimg{
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #skills img {
+                width: 90px;
+                margin-bottom: 20px;
+                margin-right: 40px;
+            }
+            #skills .img-container{
+                position: relative;
+            }
+            .cap{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 20px;
+                bottom: 0px;
+                height: 35px;
+                padding-bottom: 20px;
+                text-align: center;
+                background-color: rgb(255, 255, 255, 0.8);
+                visibility: hidden;
+                font-weight: bold;
+                border: 2px solid black
+            }
+            .img-container:hover > .cap {
+                visibility: visible;
+            }
+            a{
+                text-decoration: none;
+            }
+            #resume{
+                text-align: center;
+                border: 2px solid black;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <div id="navbar">
+            <a id="active-nav" href="">Home</a>
+            <a href="lwm.html">Learn With Me</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <!-- header: photo and title -->
+        <div id="header">
+            <div id="headtext">
+                <h1>I'M PHILLIP SUH!</h1>
+                <p>Welcome to my website</p>
+            </div>
+        </div>
+        <!-- about me and skills -->
+        <div id="aboutcontainer">
+            <div id="aboutme">
+                <h2>About Me</h2>
+                <p>Hi! I'm Phillip, and I'm a current college student at the University of Southern California studying 
+                    computer science and business administration. It may 
+                    sound naive, but living in an age of digitalization, 
+                    I always wondered how we as humans were able to evolve 
+                    from mere stone and wood in the stone ages and become the 
+                    technologically advanced people we are today. Thus, I was 
+                    always fond of learning about how different technologies 
+                    work and how they came to be, these days being software 
+                    development and different smart products. Furthermore, I 
+                    have always had an affinity for entrepreneurship and learning 
+                    how to materialize and deploy a new idea so that it most effectively 
+                    appeals to its users. This page serves to exhibit my passion 
+                    for learning new ideas as well as to support myself in further 
+                    delving into how the world revolves around technology.
+                </p>
+                <div id="resume">
+                    <a href="https://drive.google.com/file/d/1JX2JLAJFCZaIydCFWDgM0H45Z5GaqK0V/view?usp=sharing" target="_blank">CLICK FOR RESUME</a>
+                </div>
+            </div>
+            <div id="skills">
+                <h2>Skills:</h2>
+                <div id="skillimg">
+                    <div class="img-container">
+                        <img src="img/Python-logo-notext.svg.png" alt="pyth">
+                        <div class="cap">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/c++.svg.png" alt="cpp">
+                        <div class="cap">
+                            <p>C++</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/java.png" alt="java">
+                        <div class="cap">
+                            <p>Java</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/R_logo.svg.png" alt="R">
+                        <div class="cap">
+                            <p>R</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/sql-server-icon-png-29.png" alt="sql">
+                        <div class="cap">
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/html.png" alt="html">
+                        <div class="cap">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/CSS3_logo.svg.png" alt="css">
+                        <div class="cap">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/panda.svg.png" alt="panda">
+                        <div class="cap">
+                            <p>Pandas</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/mat.svg.png" alt="mat">
+                        <div class="cap">
+                            <p>Matplotlib</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footercont">
+            <!-- have name, description, and socials -->
+            <div id="footleft">
+                <p>Phillip Suh</p>
+            </div>
+            <div id="footrt">
+                <a href="https://github.com/jsuh20" target="_blank">
+                    <img id="git" src="img/git.png" alt="git">
+                </a>
+                <a href="https://www.linkedin.com/in/huspillihp" target="_blank">
+                    <img id="link" src="img/link.png" alt="link">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- extras:  iframe, transition, js/jquery-->

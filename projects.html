@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phillip Suh: Projects</title>
+        <meta name="description" content="Projects are an important and one of the most essential parts of a developer's portfolio.
+        Projects can come in the form of many things to indicate that a developer is proficient in a skill but more 
+        importantly conveys that a developer is genuinely passionate about developing and going out of their own way to
+        build something that actually interests them.">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+        <style>
+
+            /* #headtext{
+                padding-top: 150px;
+                font-size: larger;
+                color:rgb(133, 255, 10);
+                font-family: Arial, Helvetica, sans-serif;
+            } */
+            #header img{
+                width:100%;
+                height: 100%;
+                position: relative;
+                filter: brightness(0.3);
+            }
+
+            #header h1{
+                text-align: center;
+                position: absolute;
+                top: 220px;
+                right: 600px;
+            }
+            #resume{
+                text-align: center;
+                border: 2px solid black;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #projectcontainer{
+                display: flex;
+                flex-wrap: wrap;
+                width: 1500px;
+                justify-content: center;
+                margin-top: 80px;
+                margin-bottom: 100px;
+
+            }
+            .projectbox{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                margin-right: 50px;
+                /* z-index: 0; */
+            }
+
+            .projectbox > .caption {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+		    }
+
+            .projectbox:hover > .caption {
+                visibility: visible;
+            }
+
+            .projectbox > img{
+                width: 100%;
+                height: auto;
+            }
+
+            .projectbox .h100{
+                width: auto;
+                height: 100%;
+            }
+
+            .projectbox > .caption img{
+                width: 40px;
+                height: auto;
+            }
+            #pathplan > caption  img{
+                padding: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <div id="navbar"> 
+            <a href="home.html">Home</a>
+            <a href="lwm.html">Learn With Me</a>
+            <a id="active-nav">Projects</a>
+        </div>
+        <!-- header: photo and title -->
+        <div id="header">
+            <img src="img/projbg.jpg" alt="img">
+            <div id="headtext">
+                <h1>PROJECTS</h1>
+            </div>
+        </div>
+        <!-- Projects Skills -->
+        <div id="projectcontainer">
+            <div class="projectbox" id="pathplan">
+                <img class="h100" src="img/pathplan.png" alt="pathplan">
+                <div class="caption">
+                    <h2>Path Planning Visualizer</h2>
+                    <p>This is demonstration of a path finding algorithm that I implemented, which was 
+                        inspired by the Boustrophedon algorithm. </p>
+                    <a href="https://youtu.be/MEozl2eStFg" target="_blank"><img src="img/NicePng_youtube-icon-png-transparent_8035629.png" alt="video"></a>
+                    <a href="https://github.com/jsuh20/Path-Planning-Algorithm" target="_blank"><img src="img/git.png" alt="git"></a>
+                </div>
+            </div>
+            <div class="projectbox">
+                <img class="h100" src="img/prempred.png" alt="premped">
+                <div class="caption">
+                    <h2>EPL Club Goal Predictor</h2>
+                    <p>This is a web app that visualizes past goal statistics of soccer clubs and
+                        predicts goals using an ML model. </p>
+                    <a href="https://youtu.be/FdS3zTCAXM4" target="_blank"><img src="img/NicePng_youtube-icon-png-transparent_8035629.png" alt="video"></a>
+                    <a href="https://github.com/jsuh20/Premier-League-Home-Goals-Predictor" target="_blank"><img src="img/git.png" alt="git"></a>
+                </div>
+            </div>
+            <div class="projectbox">
+                <img class="h100" src="img/de656e_8134f1b6e0d74bb9abdc2a29e0e8125f_mv2.webp" alt="drone">
+                <div class="caption">
+                    <h2>CAD Drone</h2>
+                    <p>This is a drone that I created with a 3D modeling program called 123Design. 
+                        The body/frame of the drone 
+                        was 3D printed. Later, parts like the battery and propeller were attached. (STL file link for model below) </p>
+                    <a href="https://drive.google.com/file/d/1NjbJR_4tAsg5V8tGinq6xgPOPQYKmW3V/view" target="_blank"><img src="img/link-256.png" alt="git"></a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footercont">
+            <!-- have name, description, and socials -->
+            <div id="footleft">
+                <p>Phillip Suh</p>
+            </div>
+            <div id="footrt">
+                <a href="https://github.com/jsuh20" target="_blank">
+                    <img id="git" src="img/git.png" alt="git">
+                </a>
+                <a href="https://www.linkedin.com/in/huspillihp" target="_blank">
+                    <img id="link" src="img/link.png" alt="link">
+                </a>
+            </div>
+        </div>
+
+        <script src="lightbox/js/lightbox.min.js"></script>
+        <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    </body>
+</html>

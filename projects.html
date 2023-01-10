@@ -39,18 +39,18 @@
             #projectcontainer{
                 display: flex;
                 flex-wrap: wrap;
-                width: 1500px;
-                justify-content: center;
+                width: 1000px;
                 margin-top: 80px;
                 margin-bottom: 100px;
-
+                gap: 30px 50px;
+                margin-right: auto;
+                margin-left: auto;
             }
             .projectbox{
                 width: 300px;
                 height: 300px;
                 position: relative;
                 overflow: hidden;
-                margin-right: 50px;
                 /* z-index: 0; */
             }
 
@@ -95,6 +95,7 @@
             #pathplan > caption  img{
                 padding: 60px;
             }
+
         </style>
     </head>
     <body>
@@ -118,7 +119,7 @@
                 <div class="caption">
                     <h2>Path Planning Visualizer</h2>
                     <p>This is demonstration of a path finding algorithm that I implemented, which was 
-                        inspired by the Boustrophedon algorithm. </p>
+                        inspired by the Boustrophedon algorithm. (Python, Flask, HTML)</p>
                     <a href="https://youtu.be/MEozl2eStFg" target="_blank"><img src="img/NicePng_youtube-icon-png-transparent_8035629.png" alt="video"></a>
                     <a href="https://github.com/jsuh20/Path-Planning-Algorithm" target="_blank"><img src="img/git.png" alt="git"></a>
                 </div>
@@ -128,19 +129,51 @@
                 <div class="caption">
                     <h2>EPL Club Goal Predictor</h2>
                     <p>This is a web app that visualizes past goal statistics of soccer clubs and
-                        predicts goals using an ML model. </p>
+                        predicts goals using an ML model. (Python, Flask, HTML)</p>
                     <a href="https://youtu.be/FdS3zTCAXM4" target="_blank"><img src="img/NicePng_youtube-icon-png-transparent_8035629.png" alt="video"></a>
                     <a href="https://github.com/jsuh20/Premier-League-Home-Goals-Predictor" target="_blank"><img src="img/git.png" alt="git"></a>
                 </div>
             </div>
-            <div class="projectbox">
+            <div class="projectbox" id="third1">
                 <img class="h100" src="img/de656e_8134f1b6e0d74bb9abdc2a29e0e8125f_mv2.webp" alt="drone">
                 <div class="caption">
                     <h2>CAD Drone</h2>
                     <p>This is a drone that I created with a 3D modeling program called 123Design. 
                         The body/frame of the drone 
-                        was 3D printed. Later, parts like the battery and propeller were attached. (STL file link for model below) </p>
+                        was 3D printed. Later, parts like the battery and propeller were attached. (STL file link for model below) (CAD, 123Design)</p>
                     <a href="https://drive.google.com/file/d/1NjbJR_4tAsg5V8tGinq6xgPOPQYKmW3V/view" target="_blank"><img src="img/link-256.png" alt="git"></a>
+                </div>
+            </div>
+            <div class="projectbox">
+                <img class="h100" src="img/hash.png" alt="hash">
+                <div class="caption">
+                    <h2>Hashtable Simulator</h2>
+                    <p>This is a program written in C++ that I made to simulate the mechanisms of 
+                        hashtable data structures and using probing to solve the birthday 
+                        paradox problem by detecting collisions. 
+                        Attached is the link to the github repository (C++)</p>
+                    <a href="https://github.com/jsuh20/Hash-Birthday-Paradox-Simulator" target="_blank"><img src="img/git.png" alt="git"></a>
+                </div>
+            </div>
+            <div class="projectbox">
+                <img class="h100" src="img/fitbud.png" alt="fitbud">
+                <div class="caption">
+                    <h2>Fitbud Chatbox</h2>
+                    <p>As part of a group project focused on allowing people to find workout partners based
+                        on their preferences, I took part in creating the app's chatbox feature in ReactJS. (HTML/CSS, ReactJS)
+                    </p>
+                    <a href="https://youtu.be/QIlCAXrqpLE" target="_blank"><img src="img/NicePng_youtube-icon-png-transparent_8035629.png" alt="utube"></a>
+                </div>
+            </div>
+            <div class="projectbox">
+                <img class="h100" src="img/spot.png" alt="spot">
+                <div class="caption">
+                    <h2>Spotify Music Data Analysis</h2>
+                    <p>
+                        In a group project focused on analyzing Spotify music data, I partook in
+                         wrangling data and sharing insightful conclusions about patterns in music taste. (R)
+                    </p>
+                    <a href="https://drive.google.com/file/d/1OCog1rWjNKWRCr_A4ilgnUJ0PqD3lbks/view?usp=share_link" target="_blank"><img src="img/link-256.png" alt="utube"></a>
                 </div>
             </div>
         </div>

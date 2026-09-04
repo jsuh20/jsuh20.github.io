@@ -1,170 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Learn With Me</title>
-        <meta name="description" content="Since I was young, I was interested in somehow showing and telling my journey in 
-        learning and the progress I make. When doing this, I try my best to make it learnable 
-        and intriguing for others. In this page, I am trying to display my different endeavors related to what
-        interests me, particularly what is going on the market for recent technologies.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn With Me — Junghoon Suh</title>
+        <meta name="description" content="Where I keep track of what I'm learning — a research-paper presentation and a public Notion page of ongoing notes.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         <style>
-            #header{
-                background-image: url(img/bglwm.jpg); 
+            .embed-window{
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                overflow: hidden;
+                background: var(--bg-elevated);
+                box-shadow: var(--shadow);
             }
-            #mid{
-                margin-left: auto;
-                margin-right: auto;
-                background-color: rgb(44, 67, 97);
-                margin-top: -60px;
+            .embed-window iframe{
+                width: 100%;
+                border: none;
+                display: block;
             }
-            #mid h2{
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                padding-top: 70px;
-                color:azure;
-                font-size: 50px;
+            .embed-window.slides iframe{ aspect-ratio: 960 / 569; }
+
+            .browser-mock{
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+                transition: transform .18s ease, border-color .18s ease;
             }
-            #mid p{
-                width: 600px;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                padding-bottom: 70px;
-                color:chartreuse;
-                line-height: 30px;
-            }
-            #videos{
-                margin-left: auto;
-                height: 490px;
-                margin-top: 50px;
-            }
-            #videos iframe{
-                display: table;
-            }
-            #videos .vid{
-                margin-right: 100px;
-                display: inline-block;
-            }
-            #videos h2{
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-            #vidcont{
+            .browser-mock:hover{ transform: translateY(-3px); border-color: var(--accent); }
+            .browser-bar{
                 display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-                height: auto;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 14px;
+                background: var(--bg-elevated-2);
+                border-bottom: 1px solid var(--border);
             }
-            .vidcap{
-                box-sizing: border-box;
-                width: 0px;
-                min-width: 100%;
-                line-height: 20px;
+            .browser-bar .dot{ width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+            .browser-bar .dot.red{ background: #ff5f57; }
+            .browser-bar .dot.yellow{ background: #febc2e; }
+            .browser-bar .dot.green{ background: #28c840; }
+            .browser-bar .url-pill{
+                margin-left: 8px;
+                flex: 1;
+                background: var(--bg-elevated);
+                border: 1px solid var(--border);
+                border-radius: 999px;
+                padding: 6px 14px;
+                font-size: 12.5px;
+                color: var(--text-dim);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
-            #prez{
-                background-color: rgb(38, 42, 54);
-                display: flex;
-            }
-            #prezcap{
-                margin-left: 40px;
-                margin-right:40px;
-                text-align: center;
-                margin-top: 150px;
-                color:rgb(106, 194, 18);
-            }
-            #prez iframe{
-                margin-left: 100px;
-                /* display: table; */
-                width: 600px;
-                height: 300px;
-                margin-top: 60px;
-                margin-bottom: 60px;
+            .browser-shot{ position: relative; overflow: hidden; aspect-ratio: 1400 / 900; }
+            .browser-shot img{ width: 100%; height: 100%; object-fit: cover; object-position: top; }
+            .browser-mock .open-badge{
+                position: absolute;
+                top: 62px; right: 16px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 12px;
+                font-weight: 700;
+                color: #fff;
+                background: rgba(0,0,0,0.6);
+                backdrop-filter: blur(6px);
+                padding: 6px 12px;
+                border-radius: 999px;
             }
         </style>
     </head>
     <body>
         <!-- navigation bar -->
         <div id="navbar">
-            <a href="https://jsuh20.github.io/">Home</a>
-            <a id="active-nav" href="">Learn With Me</a>
-            <a href="projects.html">Projects</a>
-        </div>
-        <!-- header: photo and title -->
-        <div id="header">
-            <div id="headtext">
-                <h1>Learn With Me</h1>
+            <a class="brand" href="index.html">Junghoon Suh<span>.</span></a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a id="active-nav" class="nav-link" href="lwm.html">Learn With Me</a>
+                <a class="nav-cta" href="resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
-        <!-- middle body -->
-        <div id="mid">
-            <h2>My Explorations</h2>
-            <p><b>Since I was young, I was interested in somehow showing and telling my journey in 
-                learning and the progress I make. When doing this, I try my best to make it learnable 
-                and intriguing for others.</b>
-            </p>
+
+        <!-- header -->
+        <div class="page-header">
+            <div class="eyebrow">Learn With Me</div>
+            <h1>My Explorations</h1>
+            <p>Since I was young, I've been drawn to documenting my learning journey — here's where I keep track of it.</p>
         </div>
-        <!-- videos -->
-        <div id="videos">
-            <h2 style="font-size: 40px;">MY VIDEOS</h2>
-            <div id="vidcont">
-                <div class="vid" id="vid1">
-                    <iframe allow="fullscreen;" src="img/promo.mp4" sandbox></iframe>
-                    <div class="vidcap">
-                        <h3>Wavetalk Promo Video</h3>
-                        <p>This is a promotional video I made when I was interning at a biotech startup aiming 
-                            to create cutting-edge water filtration technology. Making this video 
-                            opened my eyes to the seriousness of the water crisis and the practical 
-                            ways of finding a solution through science</p>
-                    </div>
+
+        <!-- notion -->
+        <section class="section">
+            <div class="section-head">
+                <div class="eyebrow">Notes</div>
+                <h2>What I'm learning right now</h2>
+                <p>A public Notion page where I keep running notes on whatever I'm currently digging into.</p>
+            </div>
+            <a class="embed-window browser-mock" href="https://feather-orange-259.notion.site/Phil-s-Learning-0ab73223ef264ee0b019c8e133d9b52d" target="_blank" rel="noopener">
+                <div class="browser-bar">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <div class="url-pill">feather-orange-259.notion.site/Phil-s-Learning</div>
                 </div>
-                <div class="vid" id="vid2">
-                    <iframe allow="fullscreen;" src="img/vid2.mp4" sandbox></iframe>
-                    <div class="vidcap">
-                        <h3>Elon Musk's Plan</h3>
-                        <p>In an effort to explore Elon Musk, a founder of many companies, I made this video to 
-                        compile the different visions shared by many of his startups.</p>
-                    </div>
+                <div class="browser-shot">
+                    <img src="img/notion-preview.png" alt="Phil's Learning — a public Notion board of ongoing notes">
+                    <span class="open-badge">Open in Notion ↗</span>
                 </div>
-                <div class="vid" id="vid3">
-                    <iframe allow="fullscreen;" src="img/elplan.mp4" sandbox></iframe>
-                    <div class="vidcap">
-                        <h3>The Boring Company Intro</h3>
-                        <p>Interested in automation and the automobile industry, I created a 
-                        video to introduce some background about Elon Musk's 
-                        transit startup, the Boring Company.</p>
-                    </div>
-                </div>
+            </a>
+        </section>
+
+        <!-- presentation -->
+        <section class="section">
+            <div class="section-head">
+                <div class="eyebrow">Presentation</div>
+                <h2>Path Planning for Mobile Robots</h2>
+                <p>An overview of a research paper covering the components of path planning — required inputs,
+                    different path-planning algorithms, and how robots are getting better at recognizing their
+                    environment.</p>
             </div>
-        </div>
-        <!-- infographic -->
-        <!-- presentations -->
-        <div id="prez">
-            <div id="prezbox">
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjyzp2idVkHctSY-QIP_JRvHJ3fwgTjM7kmVYQZw3-lgE6xvFT71zVgo_UV9Pd0qf9FnXA0wJ3irZM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div class="embed-window slides">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjyzp2idVkHctSY-QIP_JRvHJ3fwgTjM7kmVYQZw3-lgE6xvFT71zVgo_UV9Pd0qf9FnXA0wJ3irZM/embed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
             </div>
-            <div id="prezcap">
-                <p><b>With this slideshow, I aimed to convey an overview 
-                    of a research paper covering the different components of 
-                    path planning, such as the required inputs, different path 
-                    planning algorithms, and how developments are being made to harness a 
-                    robot's ability to recognize its environment</b></p>
-            </div>
-        </div>
+        </section>
+
         <!-- footer -->
         <div id="footercont">
-            <!-- have name, description, and socials -->
-            <div id="footleft">
-                <p>Phillip Suh</p>
-            </div>
-            <div id="footrt">
-                <a href="https://github.com/jsuh20" target="_blank">
-                    <img id="git" src="img/git.png" alt="git">
-                </a>
-                <a href="https://www.linkedin.com/in/huspillihp" target="_blank">
-                    <img id="link" src="img/link.png" alt="link">
-                </a>
+            <div class="container">
+                <div id="footleft">
+                    <p>Junghoon (Phillip) Suh<span>Los Angeles, CA · suhp@usc.edu</span></p>
+                </div>
+                <div id="footrt">
+                    <a href="https://github.com/jsuh20" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55 4.5-1.5 7.76-5.76 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/huspillihp" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                    </a>
+                    <a href="mailto:suhp@usc.edu" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6.5 12 13l9-6.5"/><rect x="3" y="4.5" width="18" height="15" rx="2"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </body>

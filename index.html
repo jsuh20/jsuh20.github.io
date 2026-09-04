@@ -1,203 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Phillip Suh: Home</title>
-        <meta name="description" content="This website serves to convey my personality and 
-        passion for technology by showcasing various works 
-        I have done, such as research, design, and projects. It 
-        is essentially a personal portfolio website that is effective in 
-        portraying an engineer’s personality and experience through his hands-on work. 
-        The emphasis that I want to put in this website is on my skill sets and 
-        my drive to learn and apply different programming languages/frameworks. 
-        In the website, I will try to also make it aesthetically pleasing as I believe 
-        a nice graphic user interface is a necessary component 
-        when a user or a potential employer looks at my portfolio.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Junghoon (Phillip) Suh</title>
+        <meta name="description" content="Junghoon (Phillip) Suh — Computer Science graduate student at USC, software engineer, and robotics researcher. Portfolio of projects spanning full-stack engineering, AI agents, and robot learning.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
-        <style>
-            #header{
-                background-image: url(img/IMG_2968.jpeg); 
-            }
-            /* #headtext{
-                padding-top: 150px;
-                font-size: larger;
-                color:rgb(133, 255, 10);
-                font-family: Arial, Helvetica, sans-serif;
-            } */
-            #aboutcontainer{
-                width: 100%;
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: Arial, Helvetica, sans-serif;
-                margin-top: 40px;
-                margin-bottom: 40px;
-            }
-            #aboutme{
-                width: 450px;
-                margin-left: 200px;
-                margin-right: 160px;
-                line-height: 30px;
-                background-color: rgb(0, 255, 255, 0.2);
-                padding: 20px;
-            }
-            #skills{
-                width: 450px;
-            }
-            #skillimg{
-                margin-top: 60px;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            #skills img {
-                width: 90px;
-                margin-bottom: 20px;
-                margin-right: 40px;
-            }
-            #skills .img-container{
-                position: relative;
-            }
-            .cap{
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                right: 20px;
-                bottom: 0px;
-                height: 35px;
-                padding-bottom: 20px;
-                text-align: center;
-                background-color: rgb(255, 255, 255, 0.8);
-                visibility: hidden;
-                font-weight: bold;
-                border: 2px solid black
-            }
-            .img-container:hover > .cap {
-                visibility: visible;
-            }
-            a{
-                text-decoration: none;
-            }
-            #resume{
-                text-align: center;
-                border: 2px solid black;
-                width: 200px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
     </head>
     <body>
         <!-- navigation bar -->
         <div id="navbar">
-            <a id="active-nav" href="">Home</a>
-            <a href="lwm.html">Learn With Me</a>
-            <a href="projects.html">Projects</a>
-        </div>
-        <!-- header: photo and title -->
-        <div id="header">
-            <div id="headtext">
-                <h1>I'M PHILLIP SUH!</h1>
-                <p>Welcome to my website</p>
+            <a class="brand" href="index.html">Junghoon Suh<span>.</span></a>
+            <div class="nav-links">
+                <a id="active-nav" class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="lwm.html">Learn With Me</a>
+                <a class="nav-cta" href="resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
-        <!-- about me and skills -->
-        <div id="aboutcontainer">
-            <div id="aboutme">
-                <h2>About Me</h2>
-                <p>Hi! I'm Phillip, and I'm a current college student at the University of Southern California studying 
-                    computer science and business administration. It may 
-                    sound naive, but living in an age of digitalization, 
-                    I always wondered how we as humans were able to evolve 
-                    from mere stone and wood in the stone ages and become the 
-                    technologically advanced people we are today. Thus, I was 
-                    always fond of learning about how different technologies 
-                    work and how they came to be, these days being software 
-                    development and different smart products. Furthermore, I 
-                    have always had an affinity for entrepreneurship and learning 
-                    how to materialize and deploy a new idea so that it most effectively 
-                    appeals to its users. This page serves to exhibit my passion 
-                    for learning new ideas as well as to support myself in further 
-                    delving into how the world revolves around technology.
+
+        <!-- hero -->
+        <header class="hero">
+            <div class="hero-copy">
+                <div class="status-pill"><span class="dot"></span> Open to Summer 2027 SWE / AI internships</div>
+                <h1>I build systems that turn <span class="accent-text">messy real-world data</span> into things people can act on.</h1>
+                <p class="lede">
+                    I'm <strong>Junghoon (Phillip) Suh</strong>, a Computer Science M.S./B.S. student at the
+                    University of Southern California. I've shipped production frontend/backend features for
+                    government data platforms, built AI-agent research tools from scratch, and I currently do
+                    robot-learning research on vision-language-action models at USC ICAROS Lab.
                 </p>
-                <div id="resume">
-                    <a href="https://drive.google.com/file/d/1h--iY5fNvy-QyG1dSU9ph17PEI92UGNK/view?usp=sharing" target="_blank">CLICK FOR RESUME</a>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="projects.html">View my projects</a>
+                    <a class="btn btn-ghost" href="mailto:suhp@usc.edu">Get in touch</a>
+                </div>
+                <div class="social-row">
+                    <a href="https://github.com/jsuh20" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55 4.5-1.5 7.76-5.76 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/huspillihp" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                    </a>
+                    <a href="mailto:suhp@usc.edu" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6.5 12 13l9-6.5"/><rect x="3" y="4.5" width="18" height="15" rx="2"/></svg>
+                    </a>
                 </div>
             </div>
-            <div id="skills">
-                <h2>Skills:</h2>
-                <div id="skillimg">
-                    <div class="img-container">
-                        <img src="img/Python-logo-notext.svg.png" alt="pyth">
-                        <div class="cap">
-                            <p>Python</p>
+            <div class="hero-photo">
+                <div class="glow"></div>
+                <div class="frame">
+                    <img src="img/me.jpeg" alt="Junghoon Phillip Suh" style="object-position:30% center;">
+                </div>
+            </div>
+        </header>
+
+        <!-- about -->
+        <section class="section" id="about">
+            <div class="about-grid">
+                <div class="bio">
+                    <div class="eyebrow">About</div>
+                    <h2 style="margin-bottom:20px;">Half builder, half researcher — always curious about how things actually work.</h2>
+                    <p>
+                        Living in an age of digitalization, I've always wondered how we went from stone and wood
+                        tools to the technology we have today — and I've built my education and career around
+                        chasing that curiosity. I'm currently a <strong>Progressive Degree Program</strong> student
+                        at USC, finishing my B.S. in Computer Science &amp; Business Administration while starting
+                        my M.S. in Computer Science.
+                    </p>
+                    <p>
+                        On the engineering side, I've shipped features for nationwide government platforms used by
+                        thousands of civil servants, and built a founding engineering role's core product from an
+                        Excel model into a full-stack valuation simulator. On the research side, I work on robot
+                        learning at USC's ICAROS and LIRA labs — closing the gap between vision-language models and
+                        real robot actions.
+                    </p>
+                    <p>
+                        Outside of that, I like building fast, scoped side projects — an AI-agent soccer analytics
+                        platform, an earnings-research dashboard, a social travel-diary app — usually to learn a
+                        piece of the stack I haven't touched yet.
+                    </p>
+                </div>
+                <div class="fact-list">
+                    <div class="fact">
+                        <span class="k">Education</span>
+                        <span class="v">M.S. Computer Science (PDP) — Dec 2027<br>B.S. CS &amp; Business Admin — May 2026</span>
+                    </div>
+                    <hr>
+                    <div class="fact">
+                        <span class="k">School</span>
+                        <span class="v">University of Southern California</span>
+                    </div>
+                    <hr>
+                    <div class="fact">
+                        <span class="k">Currently</span>
+                        <span class="v">Robotics Graduate Research Assistant, USC ICAROS Lab</span>
+                    </div>
+                    <hr>
+                    <div class="fact">
+                        <span class="k">Based in</span>
+                        <span class="v">Los Angeles, CA</span>
+                    </div>
+                    <hr>
+                    <div class="fact">
+                        <span class="k">Contact</span>
+                        <span class="v"><a href="mailto:suhp@usc.edu" style="color:var(--accent);">suhp@usc.edu</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section class="section" id="experience">
+            <div class="section-head">
+                <div class="eyebrow">Experience</div>
+                <h2>Where I've worked</h2>
+                <p>Full-stack and platform engineering roles, from a founding-team startup to nationwide government dashboards.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="when">Apr 2026 — Aug 2026</div>
+                    <div>
+                        <div class="role">Founding Product / Software Engineering Intern</div>
+                        <div class="org">Exify+</div>
+                        <div class="loc">Los Angeles, CA (Remote)</div>
+                        <ul>
+                            <li>Replaced Exify's Excel valuation model with a full-stack simulator (FastAPI, Next.js, TypeScript, SQLite) enabling stakeholders to evaluate exit readiness across 2,000+ factor scores and 100 companies, validated with 95 automated tests.</li>
+                            <li>Built an interactive decision-tree visualizer (TypeScript, React Flow) that traced each score change to its underlying rule and weight, making valuation adjustments auditable for non-technical stakeholders.</li>
+                            <li>Owned requirements discovery across the CEO, 4 designers, marketing, and 6 SMB founders, translating user interviews and product discussions into scoring-engine and interface requirements.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">FastAPI</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">SQLite</span><span class="tag">React Flow</span>
                         </div>
                     </div>
-                    <div class="img-container">
-                        <img src="img/c++.svg.png" alt="cpp">
-                        <div class="cap">
-                            <p>C++</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="when">Sep 2023 — Aug 2025</div>
+                    <div>
+                        <div class="role">Software Engineer (Contract)</div>
+                        <div class="org">YD&amp;S</div>
+                        <div class="loc">Seoul, South Korea</div>
+                        <ul>
+                            <li>Shipped and maintained features across 8 nationwide government data platforms each serving 1,000+ daily civil-service users; supported delivery through GitLab and Jenkins CI/CD pipelines.</li>
+                            <li>Developed frontend interfaces for GRIP dashboards in Vue.js/Vuex and JavaScript, including an emergency alert system for the Environment Ministry, reducing rendering time by 60% (5s → 2s).</li>
+                            <li>Designed backend modules for GRIP, including user-activity logging, data-aggregation pipelines, and dashboard services using Java, Spring Boot, MyBatis, and SQL, powering dashboards used by mayors and government agencies nationwide.</li>
+                            <li>Led technical onboarding for 5 new engineers on Vue.js, Spring, and ETL, standardizing ramp-up on development workflows.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Vue.js</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MyBatis</span><span class="tag">GitLab CI/CD</span><span class="tag">Jenkins</span>
                         </div>
                     </div>
-                    <div class="img-container">
-                        <img src="img/java.png" alt="java">
-                        <div class="cap">
-                            <p>Java</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/R_logo.svg.png" alt="R">
-                        <div class="cap">
-                            <p>R</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/sql-server-icon-png-29.png" alt="sql">
-                        <div class="cap">
-                            <p>SQL</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/html.png" alt="html">
-                        <div class="cap">
-                            <p>HTML</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/CSS3_logo.svg.png" alt="css">
-                        <div class="cap">
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/panda.svg.png" alt="panda">
-                        <div class="cap">
-                            <p>Pandas</p>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <img src="img/mat.svg.png" alt="mat">
-                        <div class="cap">
-                            <p>Matplotlib</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="when">Jun 2022 — Aug 2022</div>
+                    <div>
+                        <div class="role">AI Research Intern</div>
+                        <div class="org">GINT (AgTech Startup)</div>
+                        <div class="loc">Seoul, South Korea</div>
+                        <ul>
+                            <li>Planned and devised an optimal path planning algorithm with Python (Pandas, NumPy, Matplotlib) for the company's autonomous tractor GPS unit app, Pluva Auto.</li>
+                            <li>Directed company-wide seminars on past and present path-planning algorithms (deep-learning-based, genetic algorithms), providing new insights on optimal algorithms that could be integrated into their product.</li>
+                            <li>Analyzed SLAM and localization techniques from 6 research papers, creating technical documentation that accelerated the team's understanding of GPS-denied navigation challenges.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">SLAM</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- research -->
+        <section class="section" id="research">
+            <div class="section-head">
+                <div class="eyebrow">Research</div>
+                <h2>Robot learning at USC</h2>
+                <p>Working on closing the gap between vision-language models and real robot manipulation policies.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="when">Aug 2026 — Present</div>
+                    <div>
+                        <div class="role">Robotics Graduate Research Assistant</div>
+                        <div class="org">USC Intelligent and Cooperative Autonomy for Robotics (ICAROS) Lab</div>
+                        <div class="loc">Los Angeles, CA (Remote)</div>
+                        <ul>
+                            <li>Investigating Vision-Language-Action models for language-conditioned manipulation in a 4-person team; building a feedback-driven system to close the VLM-to-action-policy grounding gap, targeting a top AI/robotics conference.</li>
+                        </ul>
+                        <div class="tag-row"><span class="tag">VLA Models</span><span class="tag">Robot Manipulation</span></div>
+                        <div class="research-photo" style="max-width:300px;">
+                            <img src="img/robot1.jpeg" alt="Robot manipulator arm set up for a manipulation task at the ICAROS Lab" style="aspect-ratio:3/4;">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="when">Sep 2025 — May 2026</div>
+                    <div>
+                        <div class="role">Undergraduate Research Intern</div>
+                        <div class="org">USC Learning and Interactive Robot Autonomy (LIRA) Lab</div>
+                        <div class="loc">Los Angeles, CA</div>
+                        <ul>
+                            <li>Built a Python data pipeline for warm-start reinforcement learning, processing 2,500 offline demo transitions and supporting 100K-step pretraining followed by 50K-step online fine-tuning for robotic manipulation in JAX and ManiSkill.</li>
+                            <li>Designed safety curricula with severity-tiered catastrophe regions and ran PPO experiments in PyTorch, NumPy, and ManiSkill across 12 configurations spanning 3 manipulation tasks to reduce catastrophe intrusions during policy rollout.</li>
+                        </ul>
+                        <div class="tag-row"><span class="tag">JAX</span><span class="tag">ManiSkill</span><span class="tag">PyTorch</span><span class="tag">PPO</span><span class="tag">Reinforcement Learning</span></div>
+                        <div class="research-photo" style="max-width:340px;">
+                            <img src="img/lira.png" alt="ManiSkill simulation environments used for LIRA Lab reinforcement learning experiments" style="aspect-ratio:780/742;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- featured projects teaser -->
+        <section class="section" id="projects">
+            <div class="section-head">
+                <div class="eyebrow">Projects</div>
+                <h2>A few things I've built recently</h2>
+                <p>Full-stack apps and AI agents, built end to end — see the full list with write-ups, demos, and code.</p>
+            </div>
+            <div class="project-teaser-grid">
+                <div class="teaser-card">
+                    <span class="tag">Python · FastAPI · Kafka</span>
+                    <h3>MatchPulse</h3>
+                    <p>Real-time agentic soccer intelligence platform processing match events into tactical analysis, stress-tested to ~400 events/sec.</p>
+                </div>
+                <div class="teaser-card">
+                    <span class="tag">React · FastAPI · LLM</span>
+                    <h3>EarningsEdge</h3>
+                    <p>AI-powered earnings research dashboard that turns financials, news, and consensus data into a structured earnings preview.</p>
+                </div>
+                <div class="teaser-card">
+                    <span class="tag">Spring Boot · React Native · C++</span>
+                    <h3>Journi</h3>
+                    <p>Social travel-diary and itinerary-optimization platform with a custom C++ key-value store cutting latency 2.16×.</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a class="btn btn-ghost" href="projects.html">See all projects →</a>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="section" id="skills">
+            <div class="section-head">
+                <div class="eyebrow">Skills</div>
+                <h2>Languages &amp; tools I work with</h2>
+            </div>
+            <div class="skills-groups">
+                <div class="skills-group">
+                    <h3>Languages</h3>
+                    <div class="pills">
+                        <span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>C++</span><span>HTML/CSS</span><span>Swift</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Frontend</h3>
+                    <div class="pills">
+                        <span>React.js</span><span>React Native</span><span>Next.js</span><span>Vue.js</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Backend &amp; Data</h3>
+                    <div class="pills">
+                        <span>FastAPI</span><span>Spring Boot</span><span>Flask</span><span>PostgreSQL</span><span>SQLite</span><span>Redis</span><span>Kafka</span><span>Supabase</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>ML / AI</h3>
+                    <div class="pills">
+                        <span>PyTorch</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Google ADK</span><span>Gemini API</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Tooling</h3>
+                    <div class="pills">
+                        <span>GitLab CI/CD</span><span>Jenkins</span><span>DBeaver</span><span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- footer -->
         <div id="footercont">
-            <!-- have name, description, and socials -->
-            <div id="footleft">
-                <p>Phillip Suh</p>
-            </div>
-            <div id="footrt">
-                <a href="https://github.com/jsuh20" target="_blank">
-                    <img id="git" src="img/git.png" alt="git">
-                </a>
-                <a href="https://www.linkedin.com/in/huspillihp" target="_blank">
-                    <img id="link" src="img/link.png" alt="link">
-                </a>
+            <div class="container">
+                <div id="footleft">
+                    <p>Junghoon (Phillip) Suh<span>Los Angeles, CA · suhp@usc.edu</span></p>
+                </div>
+                <div id="footrt">
+                    <a href="https://github.com/jsuh20" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55 4.5-1.5 7.76-5.76 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/huspillihp" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                    </a>
+                    <a href="mailto:suhp@usc.edu" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6.5 12 13l9-6.5"/><rect x="3" y="4.5" width="18" height="15" rx="2"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </body>
 </html>
-
-<!-- extras:  iframe, transition, js/jquery-->

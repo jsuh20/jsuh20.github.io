@@ -601,6 +601,15 @@ p{ margin: 0; }
     object-fit: cover;
     object-position: top;
 }
+.project-card .media.duo{
+    display: flex;
+    gap: 10px;
+}
+.project-card .media.duo img{
+    flex: 1 1 0;
+    min-width: 0;
+    object-position: center top;
+}
 .project-card .media .video-badge{
     position: absolute;
     top: 24px; right: 24px;
